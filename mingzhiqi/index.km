@@ -1,0 +1,376 @@
+{
+    "root": {
+        "data": {
+            "id": "cel62140l9s0",
+            "created": 1632796509165,
+            "text": "明之旗网络"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cel63gzni940",
+                    "created": 1632796622094,
+                    "text": "网络七层协议"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cel6bphpylc0",
+                            "created": 1632797267514,
+                            "text": "应用层",
+                            "note": "* 为应用软件而设的接口，以设置与另一软件之间的通信。"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cel6k50qeds0",
+                                    "created": 1632797928229,
+                                    "text": "HTTP、FTP、SMTP"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cel6c1nebhc0",
+                            "created": 1632797293979,
+                            "text": "表示层",
+                            "note": "* 不同系统之间的通信、信息翻译\n* 把数据转换为接收者系统格式兼容的数据格式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel6c5du4eo0",
+                            "created": 1632797302108,
+                            "text": "会话层",
+                            "note": "* 负责在数据传说中设置和维护计算机网络中两台计算机之间的通信"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cel6kp8quz40",
+                                    "created": 1632797972249,
+                                    "text": "SSL、TLS"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cel6c9mulb40",
+                            "created": 1632797311360,
+                            "text": "传输层",
+                            "note": "* 有了MAC和IP，还需要一个端口号，建立端口到端口的通信，只要确定主机和端口，我们就能实现程序之间的交流。\n* 提供可靠的端到端网络数据流服务，TCP/IP协议"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cel6la14phk0",
+                                    "created": 1632798017501,
+                                    "text": "TCP、UDP"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cel6cc885t40",
+                            "created": 1632797317006,
+                            "text": "网络层",
+                            "note": "* 决定数据的路径选择和转寄。\n* 实现主机到主机的通信"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel6cet74800",
+                            "created": 1632797322627,
+                            "text": "链路层",
+                            "note": "* 单纯的0和1没有意义必须确定解读的方式，多少个电信号算是一组，每个电信号有何意义。\n* 规定了0和1的分包形式，确定网络数据包的传输形式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel6cg82n340",
+                            "created": 1632797325704,
+                            "text": "物理层",
+                            "note": "* 把电脑连接起来的物理手段\n* 将信息变成比特流、电流脉冲、0和1等"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cel6dijf6xc0",
+                                    "created": 1632797409108,
+                                    "text": "网卡、网线、集线器、中继器、猫"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cel63xkyp4g0",
+                    "created": 1632796658211,
+                    "text": "浏览器原理"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cel644a9p3s0",
+                    "created": 1632796672802,
+                    "text": "web安全"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cel6b90ylg00",
+                            "created": 1632797231672,
+                            "text": "csrf"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel6bbh5sao0",
+                            "created": 1632797237005,
+                            "text": "xss"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel6bcfz0qw0",
+                            "created": 1632797239110,
+                            "text": "DDOS"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel6beax3pc0",
+                            "created": 1632797243158,
+                            "text": "sql注入"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel704exptc0",
+                            "created": 1632799180737,
+                            "text": "https",
+                            "note": "### 证书签发阶段\n1. 网站生成公私密钥对，私钥自己保存，公钥提交给CA\n2. CA把证书签发机构、有效期、公钥、网站域名信息以明文方式写成一个文件\n3. CA用hash算法计算文件得到指纹，用私钥对指纹和hash算法进行加密得到签名。\n4. CA把明文证书、指纹、hash算法、签名下发给服务器\n5. 服务器有了私钥和证书\n\n### 验证过程\n1. 浏览器请求443端口\n2. 服务器下发数字证书给浏览器\n3. 浏览器校验CA、有效期、域名\n4. 从操作系统取出证书颁发的公钥，根据签名算法对签名解密得到指纹和指纹算法。\n5. 浏览器用指纹算法再次计算指纹与解密的指纹比较，如果一致证书有效，拿到有效公钥\n6. 浏览器用得到的公钥进行通信。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cel706zhc1s0",
+                            "created": 1632799186333,
+                            "text": "jwt"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cel649los540",
+                    "created": 1632796684376,
+                    "text": "算法"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cel64aqfvjs0",
+                    "created": 1632796686840,
+                    "text": "网络性能优化"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cel70o577og0",
+                            "created": 1632799223684,
+                            "text": "执行性能"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cel72hyd9pc0",
+                                    "created": 1632799366939,
+                                    "text": "减少全局变量、合理使用闭包"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel72orj2680",
+                                    "created": 1632799381764,
+                                    "text": "防抖、节流"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel7324bc7c0",
+                                    "created": 1632799410834,
+                                    "text": "使用框架（vue、react）虚拟DOM"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel78fw68mw0",
+                                    "created": 1632799832637,
+                                    "text": "长列表优化、虚拟列表"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel78pn4nk80",
+                                    "created": 1632799853858,
+                                    "text": "对于耗时执行可以使用webwoker"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cel70s7jypk0",
+                            "created": 1632799232534,
+                            "text": "网络性能"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cel71jhnntc0",
+                                    "created": 1632799291918,
+                                    "text": "script defer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel7crhzczk0",
+                                    "created": 1632800171357,
+                                    "text": "gzip"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel7d32c6mo0",
+                                    "created": 1632800196533,
+                                    "text": "图片懒加载"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel71nb3g280",
+                                    "created": 1632799300228,
+                                    "text": "图片（雪碧图）、html、css、js合并压缩"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel726hfw6o0",
+                                    "created": 1632799341971,
+                                    "text": "首页预渲染使用webpack rerender插件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel76uciqx40",
+                                    "created": 1632799707373,
+                                    "text": "合理使用webpack corejs、poyfill减少打包体积"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel741n76xs0",
+                                    "created": 1632799488163,
+                                    "text": "对于一些库可以使用cdn引入"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel760n8f800",
+                                    "created": 1632799642717,
+                                    "text": "合理使用promise.all进行数据并行加载、提升数据显示性能"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cel7cbylr000",
+                            "created": 1632800137534,
+                            "text": "性能测试工具"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cel7cfl1c3c0",
+                                    "created": 1632800145421,
+                                    "text": "webpagetest"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cel7clmyvhc0",
+                                    "created": 1632800158598,
+                                    "text": "pingdom"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cel7ecxwclc0",
+                            "created": 1632800296396,
+                            "text": "vue、react对应的框架优化"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cel64fyhjfc0",
+                    "created": 1632796698211,
+                    "text": "项目"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cel64s7vtm80",
+                    "created": 1632796724900,
+                    "text": "vue、react面试题"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
